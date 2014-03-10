@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.2.12"
+  s.add_dependency "rails", "> 3"
   # s.add_dependency "jquery-rails"
 
   s.add_development_dependency 'pry'
@@ -24,11 +24,11 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec-rails'
   s.add_development_dependency 'capybara'
   s.add_development_dependency 'factory_girl_rails'
-  s.add_development_dependency 'rspec'  
+  s.add_development_dependency 'rspec'
   s.add_development_dependency 'guard-rspec'
-  s.add_development_dependency 'rb-fsevent'  
+  s.add_development_dependency 'rb-fsevent'
   s.add_development_dependency 'growl'
-  
+
   s.add_development_dependency 'sqlite3'
 
   s.test_files = Dir["spec/**/*"]
